@@ -112,13 +112,13 @@
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала дешёвые</option>
         </select>
-        <a class="button" href="#" >
+        <a class="show-table button" href="#" >
           <span class="visually-hidden">Показать таблицей</span>
         </a>
-        <a class="button" href="#">
+        <a class="show-slide button" href="#">
           <span class="visually-hidden">Показать слайдшоу</span>
         </a>
-        <a class="button" href="#">
+        <a class="show-list button" href="#">
           <span class="visually-hidden">Показать списком</span>
         </a>
         <ul class="hotels-list">
@@ -130,7 +130,7 @@
             <p class="hotels-card-type">Гостиница</p>
             <p class="hotels-card-price">От 4000 ₽</p>
             <a class="hotels-card-more button" href="#">Подробнее</a>
-            <a class="hotels-card-favorites" href="#">В избранное</a>
+            <a class="hotels-card-favorites button" href="#">В избранное</a>
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
@@ -140,12 +140,12 @@
           <li class="hotels-card">
             <a class="hotels-card-link" href="#">
               <img class="hotels-image" src="images/catalog/catalog-content/hotel-villas-at-poco-diablo.jpg" width="300" height="211" alt="Виллас Поко Диабло.">
-              <h2 class="hotels-card-title">Villas at Poo Diablo</h2>
+              <h2 class="hotels-card-title">Villas at Poco Diablo</h2>
             </a>
             <p class="hotels-card-type">Гостиница</p>
             <p class="hotels-card-price">От 5000 ₽</p>
             <a class="hotels-card-more button" href="#">Подробнее</a>
-            <a class="hotels-card-favorites-checked" href="#">В избранном</a>
+            <a class="hotels-card-favorites-checked button" href="#">В избранном</a>
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
@@ -160,7 +160,7 @@
             <p class="hotels-card-type">Гостиница</p>
             <p class="hotels-card-price">От 2500 ₽</p>
             <a class="hotels-card-more button" href="#">Подробнее</a>
-            <a class="hotels-card-favorites" href="#">В избранное</a>
+            <a class="hotels-card-favorites button" href="#">В избранное</a>
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
@@ -174,12 +174,13 @@
             <p class="hotels-card-type">Гостиница</p>
             <p class="hotels-card-price">От 1500 ₽</p>
             <a class="hotels-card-more button" href="#">Подробнее</a>
-            <a class="hotels-card-favorites" href="#">В избранное</a>
+            <a class="hotels-card-favorites button" href="#">В избранное</a>
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
             <img src="images/catalog/catalog-decor/stars-catalog.svg" width="18" height="17" class="rating-stars" alt="Звёздочка рейтинга.">
             <span class="hotels-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
+        <img src="images/catalog/catalog-decor/line.svg" width="1055px" class="line" alt="Разделитель">
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -201,7 +202,7 @@
           </li>
         </ul>
         <span class="hotels-on-page">Гостиниц на странице:</span>
-        <select class="select-control" aria-label="Сортировка">
+        <select class="select-control performance" aria-label="Сортировка">
           <option value="popular">4</option>
         </select>
       </section>
@@ -209,7 +210,7 @@
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
+          <!--<label for="newsletter-email">Email</label>-->
           <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>

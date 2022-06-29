@@ -297,6 +297,81 @@ body {
   height: 211px;
 }
 
-.hotels-card-title {
+.hotels-card-link {
+  color: #000000;
+  background-color: #ffffff;
   text-decoration: none;
+}
+
+.hotels-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  width: 300px;
+  height: 28px;
+}
+
+.hotels-card-type {
+  font-weight: 400;
+  width: 400px;
+}
+
+.hotels-card-price {
+  font-weight: 400;
+  width: 400px;
+}
+
+.button + .hotels-card-favorites{
+  background-color: #82b3d3;
+  width: 140px;
+  line-height: 37px;
+}
+
+.button + .hotels-card-favorites-checked {
+ background-color: #7db54f;
+}
+
+.hotels-rating {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 140px;
+  height: 37px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  width: 12px;
+  height: 36px;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.hotels-on-page {
+  font-weight: 400;
+  width: 175px;
+  height: 22.91px;
+}
+
+.performance {
+width: 160px;
+height: 49px;
 }
