@@ -16,7 +16,15 @@
 
 /*Index*/
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-size: 18px;
   line-height: 21px;
   font-weight: 700;
@@ -25,6 +33,9 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
+.main-container {
+    flex-grow: 1;
+}
 .button {
   font-size: 16px;
   line-height: 20px;
@@ -42,6 +53,24 @@ body {
   border: none;
 }
 
+.navigation {
+display: flex;
+width: 1200px;
+height: 70px;
+margin: 0 auto;
+}
+
+.navigation-list {
+  width: 390px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 263.87px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-family: "PT Sans", sans-serif;
   line-height: 26px;
@@ -53,12 +82,17 @@ body {
   text-decoration: none;
   }
 
-.page-main-logo {
-  color:#000000;
-  position: absolute;
-  width: 458px;
-  height: 352px;
-  background-size: 100% auto;
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-intro {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 1200px;
+  height: 767px;
 }
 
 .page-main {
@@ -68,28 +102,45 @@ body {
   background-repeat: no-repeat;
   width: 1200px;
   height: 485px;
+
+}
+
+.page-main-logo {
+  color:#000000;
+  width: 458px;
+  height: 352px;
+  padding: 51px 371px 25px;
 }
 
 .welcome-logo {
-  /*background-color: #ffffff;*/
+  position: absolute;
   background-size: 100% auto;
+  padding: 0.4px 135px 306.9px 135.3px;
 }
 
 .to-the-gorgeous-logo {
-  /*background-color: #ffffff;*/
+  position: absolute;
   background-size: 100% auto;
+  padding: 56.1px 101px 267.12px;
 }
 
 .sedona-because-logo {
-  /*background-color: #ffffff;*/
+  position: absolute;
   background-size: 100% auto;
+  padding: 138.2px 1px 1.03px 0.3px;
 }
 
 .vector-line-logo {
-  /*background-color: #ffffff;*/
-  background-size: 100% auto;
+  position: absolute;
   width: 1200px;
   height: 57px;
+}
+
+.section-description {
+  width: 1200px;
+  height: 282px;
+  text-align: center;
+
 }
 
 .main-header {
@@ -100,27 +151,39 @@ body {
   text-transform: uppercase;
 }
 
-.section-description {
-  width: 1200px;
-  height: 417px;
-  text-align: center;
+.main-header .description {
+  width: 620px;
+  height: 72px;
 }
 
 .sedona-description {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  text-align: center;
+  padding: 31px 0 90px;
 }
 
-.advantages {
-  width: 1200px;
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 384px;
+  justify-content: center;
 }
 
 .dark-blue {
   color: #ffffff;
   background-color: #82B3D3;
   text-align: center;
+}
+
+.advantages-title {
+  text-transform: uppercase;
 }
 
 .advantages-title + .white {
@@ -163,6 +226,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   text-decoration: underline;
+
 }
 
 .benefits-sky-blue {
@@ -176,9 +240,14 @@ body {
 }
 
 .section-interest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 1200px;
   height: 417px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .main-header + .interest {
@@ -200,6 +269,10 @@ body {
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   background-color: #000000;
   background-image: url(../images/index/index-content/background-subscibe.jpg);
@@ -209,6 +282,7 @@ body {
   width: 1200px;
   height: 411px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .subscribe-title {
@@ -217,9 +291,14 @@ body {
   font-weight: 700px;
   color: #ffffff;
   text-transform: uppercase;
+  width: 404px;
+  height: 36px;
+
 }
 
 .subscribe-description {
+  width: 475px;
+  height: 52px;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
@@ -247,11 +326,17 @@ body {
   border-radius: 0 10px 10px 0;
   text-align: center;
   text-transform: uppercase;
+
 }
 
 .page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 1200px;
   height: 120px;
+  margin: 0 auto;
 }
 
 .page-footer .footer-social-item a {
