@@ -527,6 +527,7 @@ padding-top: 80px;
 .pagination-item {
   width: 60px;
   height: 60px;
+  padding-right: 8px;
 }
 
 .pagination-link {
