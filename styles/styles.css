@@ -694,10 +694,10 @@ body {
 }
 
 .select-page {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 386px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 386px;
 }
 
 .hotels-on-page {
