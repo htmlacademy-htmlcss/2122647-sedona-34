@@ -134,7 +134,7 @@ body {
 
 .page-main-logo {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   color:#000000;
   height: 352px;
@@ -145,19 +145,17 @@ body {
 .welcome-logo {
   position: absolute;
   background-size: 100% auto;
-  padding: 0.4px 135px 306.9px 135.3px;
+  padding: 0 auto;
 }
 
 .to-the-gorgeous-logo {
-  position: absolute;
-  background-size: 100% auto;
-  padding: 56.1px 101px 267.12px;
+  padding: 56px 101px 41px;
 }
 
 .sedona-because-logo {
   position: absolute;
   background-size: 100% auto;
-  padding-top: 138.2px;
+  padding-top: 138px;
 }
 
 .vector-line-logo {
@@ -166,7 +164,6 @@ body {
 }
 
 .section-description {
-  /*height: 282px;*/
   text-align: center;
   margin-top: 63px;
 }
@@ -543,7 +540,7 @@ body {
   padding: 14px 15px;
 }
 
- .reset{
+.reset {
   text-decoration: none;
   font-weight: 400;
   color: #ffffff;
@@ -645,6 +642,11 @@ body {
   text-transform: uppercase;
 }
 
+.line {
+margin-right: 72px;
+margin-left: 73px;
+}
+
 /*Пагинация*/
 
 .pagination-container {
@@ -657,7 +659,7 @@ body {
   gap: 270px;
 }
 
-.pagination {
+.pagination-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -679,13 +681,13 @@ body {
   text-decoration: none;
   display: block;
   box-sizing: border-box;
-  padding: 11.36px 24.55px 12.64px 23.45px;
+  padding: 11px 25px 13px 23px;
   width: 60px;
   height: 60px;
 }
 
 .pagination-item .ten {
-  padding: 11.36px 18.55px 12.64px 18.45px;
+  padding: 11px 19px 13px 18px;
 }
 
 .pagination-current {
@@ -702,11 +704,11 @@ body {
 
 .hotels-on-page {
   font-weight: 400;
-  padding-right: 51px;
 }
 
 .performance {
   margin: 0;
+  padding: 0;
   width: 160px;
 }
 
