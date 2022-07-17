@@ -55,6 +55,8 @@ body {
   line-height: 20px;
   font-weight: 700;
   font-style: normal;
+  display: flex;
+  justify-content: center;
   text-align: center;
   align-items: center;
   color: #ffffff;
@@ -146,7 +148,7 @@ body {
 .welcome-logo {
   position: absolute;
   background-size: 100% auto;
-  padding: 0 auto;
+  padding: 0;
 }
 
 .to-the-gorgeous-logo {
@@ -189,23 +191,30 @@ body {
 }
 
 .advantages-list {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0;
+  grid-template-areas:
+    ". sedona-sity sedona-sity"
+    ". . ."
+    "devils-bridge devils-bridge ."
+    ". . .";
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
 }
 
 .advantages-item {
-  width: 400px;
-  height: 384px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  }
+}
 
 .dark-blue {
   color: #ffffff;
@@ -264,6 +273,7 @@ body {
 .sedona-sity {
   background-color: #ffffff;
   background-size: 100% auto;
+  grid-area: sedona-sity;
 }
 
 .benefits-blue {
@@ -277,6 +287,12 @@ body {
 .devils-bridge {
   background-color: #ffffff;
   background-size: 100% auto;
+  grid-area: devils-bridge;
+}
+
+.sedona-sity img, .devils-bridge img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .benefits-sky-blue {
@@ -452,7 +468,7 @@ body {
 .sedona-hotels-title {
   font-size: 60px;
   line-height: 78px;
-  font-weight: 1700;
+  font-weight: 700;
   margin: 0;
   margin-bottom: 10px;
 }
@@ -550,20 +566,12 @@ body {
   margin-top: 20px;
 }
 
-.catalog-hotels-sedona {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 /*Сортировка*/
 
 .search-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1057px;
-  height: 49px;
   margin: 50px 71px 0 72px;
 }
 
@@ -594,43 +602,100 @@ body {
   background-color: #ffffff;
 }
 
+/*Контейнер каталога*/
+
 /*Карточки*/
 
 .hotels-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 18px;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 56px 71px 66px 73px;
+}
+
+.hotels-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 340px;
+}
+
+.hotels-image {
+  object-fit: cover;
+  padding: 20px 20px 16px;
 }
 
 .hotels-card-link {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
-  display: block;
 }
 
 .hotels-card-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  margin: 0;
+  padding: 0 20px 16px;
+}
+
+.type-price {
+  display: flex;
+  column-gap: 20px;
+  padding: 0 20px 16px;
 }
 
 .hotels-card-type {
+  display: block;
   font-weight: 400;
+  margin: 0;
+  width: 140px;
 }
 
 .hotels-card-price {
+  display: block;
   font-weight: 400;
+  margin: 0;
+  width: 140px;
+}
+
+.link-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 20px 16px;
+}
+
+.hotels-card-more {
+  background-color: #756157;
+  width: 140px;
 }
 
 .button + .hotels-card-favorites{
   background-color: #82b3d3;
   width: 140px;
-  line-height: 37px;
 }
 
 .button + .hotels-card-favorites-checked {
   background-color: #7db54f;
+  width: 140px;
+}
+
+.image-rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  padding: 0 20px 20px;
+}
+
+.rating-stars {
+  display: block;
+  align-items: center;
+  margin: 0;
+  width: 140px;
 }
 
 .hotels-rating {
@@ -641,11 +706,17 @@ body {
   background-color: #f2f2f2;
   border-radius: 4px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 140px;
+  height: 37px;
 }
 
 .line {
-margin-right: 72px;
-margin-left: 73px;
+  margin-right: 72px;
+  margin-left: 73px;
 }
 
 /*Пагинация*/
