@@ -173,16 +173,6 @@ body {
   padding: 0;
 }
 
-.to-the-gorgeous-logo {
-  padding: 56px 101px 41px;
-}
-
-.sedona-because-logo {
-  position: absolute;
-  background-size: 100% auto;
-  padding-top: 138px;
-}
-
 .vector-line-logo {
   position: absolute;
   height: 57px;
@@ -480,6 +470,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   background-image: url(../images/catalog/catalog-content/bg-filter.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
   height: 403px;
@@ -514,7 +505,12 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
   list-style-type: none;
+  padding: 0;
   margin: 0;
   margin-left: 2px;
 }
