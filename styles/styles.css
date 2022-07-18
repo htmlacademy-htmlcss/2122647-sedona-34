@@ -67,14 +67,20 @@ body {
   width: 160px;
   height: 37px;
   border: none;
+  cursor: pointer;
+  box-sizing: border-box;
 }
-
 
 /*Меню*/
 .navigation {
   display: flex;
-  min-height: 70px;
-  margin: 0 auto;
+  min-height: 65px;
+  margin: 0;
+}
+
+/*Лототип-ссылка*/
+.page-header-logo {
+  padding-left: 70px;
 }
 
 /*Список навигации слева*/
@@ -83,6 +89,7 @@ body {
   flex-wrap: wrap;
   width: 390px;
   margin: 0;
+  margin-left: 30px;
   padding: 0;
   list-style-type: none;
 }
@@ -99,6 +106,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  position: relative;
 }
 
 /*Список навигации справа*/
@@ -106,12 +114,26 @@ body {
   display: flex;
   align-items: center;
   max-width: 300px;
-  margin-left: auto;
+  margin: 0;
+  padding: 0 70px 0 237px;
 }
 
 .navigation-user .navigation-link {
   min-width: 18px;
   min-height: 18px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.icon-heart {
+  padding-right: 20px;
 }
 
 .main-container {
@@ -399,15 +421,17 @@ body {
 .page-footer-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 1060px;
   margin: 0 auto;
   padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .footer-social-list {
- margin-top: 5px;
- margin-bottom: 5px;
- list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
 }
 
 .social-list {
@@ -418,9 +442,25 @@ body {
   list-style-type: none;
 }
 
-.footer-social-item {
+.footer-social-link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  list-style-type: none;
   width: 48px;
   height: 40px;
+}
+
+.footer-social-vk {
+  background-image: url("../images/footer/logo-vk.svg");
+}
+
+.footer-social-tg {
+  background-image: url("../images/footer/logo-telegram.svg");
+}
+
+.footer-social-ut {
+  background-image: url("../images/footer/logo-youtube.svg");
 }
 
 .phone-number {
@@ -594,6 +634,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin-left: 78px;
+  margin-right: auto;
+  gap: 8px;
 }
 
 .show-icon .button {
@@ -648,14 +690,14 @@ body {
 }
 
 .hotels-card-type {
-  display: block;
+  display: inline-block;
   font-weight: 400;
   margin: 0;
   width: 140px;
 }
 
 .hotels-card-price {
-  display: block;
+  display: inline-block;
   font-weight: 400;
   margin: 0;
   width: 140px;
@@ -776,6 +818,7 @@ body {
 
 .hotels-on-page {
   font-weight: 400;
+  margin-right: 51px;
 }
 
 .performance {
