@@ -71,6 +71,18 @@ body {
   box-sizing: border-box;
 }
 
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  background-color: #756157;
+}
+
 /*Меню*/
 .navigation {
   display: flex;
@@ -109,6 +121,24 @@ body {
   position: relative;
 }
 
+.navigation-link-current::before {
+  position: absolute;
+  border: 2px solid #756257;
+  top: 65px;
+  width: 68px;
+  background-color: #756257;
+  content: "";
+}
+
+.navigation-link-catalog-current::before {
+  position: absolute;
+  border: 2px solid #756257;
+  top: 65px;
+  width: 93px;
+  background-color: #756257;
+  content: "";
+}
+
 /*Список навигации справа*/
 .navigation-user {
   display: flex;
@@ -123,17 +153,22 @@ body {
   min-height: 18px;
 }
 
-.navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
-
 .icon-heart {
-  padding-right: 20px;
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  top: 15px;
+  left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-container {
@@ -233,11 +268,18 @@ body {
   background-color: #82B3D3;
 }
 
+.advantages-icon {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   width: 180px;
+  margin: 0;
+  padding-bottom: 30px;
 }
 
 .white {
@@ -258,26 +300,16 @@ body {
   padding: 0 85px 102px;
 }
 
-.vector-house {
-  padding-top: 80px;
-}
-
-.vector-food {
-  padding-top: 81px;
-}
-
-.vector-souvenirs {
-  padding-top: 78px;
-}
-
 .sedona-description-advantages-house {
   font-weight: 400;
+  margin: 0;
   padding-bottom: 81px;
   width: 190px;
 }
 
 .sedona-description-advantages {
   font-weight: 400;
+  margin: 0;
   padding-bottom: 81px;
   width: 230px;
 }
@@ -408,6 +440,18 @@ body {
   text-transform: uppercase;
 }
 
+.newsletter-button:hover {
+  background-color: #68A2CA;
+}
+
+.newsletter-button:focus {
+  background-color: #68A2CA;
+}
+
+.newsletter-button:active {
+    background-color: #82B3D3;
+}
+
 .page-footer-container {
   display: flex;
   justify-content: space-between;
@@ -433,24 +477,36 @@ body {
 }
 
 .footer-social-link {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 40px;
 }
 
-.footer-social-vk {
-  background-image: url("../images/footer/logo-vk.svg");
+.footer-social-vk:hover,
+.footer-social-tg:hover,
+.footer-social-ut:hover {
+  fill: #68A2CA;
 }
 
-.footer-social-tg {
-  background-image: url("../images/footer/logo-telegram.svg");
+.footer-social-vk:focus,
+.footer-social-tg:focus,
+.footer-social-ut:focus {
+  border: none;
+  outline: none;
+  fill: #68A2CA;
 }
 
-.footer-social-ut {
-  background-image: url("../images/footer/logo-youtube.svg");
+.footer-social-link:active {
+  fill: #68A2CA;
+}
+
+.footer-social-vk:active,
+.footer-social-tg:active,
+.footer-social-ut:active {
+  fill: #68A2CA;
+  opacity: 30%;
 }
 
 .phone-number {
@@ -460,6 +516,33 @@ body {
   text-align: center;
   text-transform: uppercase;
   display: block;
+}
+
+.phone-number:hover {
+  color: #756157;
+}
+
+.phone-number:focus {
+  color: #756157;
+}
+
+.phone-number:focus {
+  opacity: 30%;
+}
+
+.html-icon:hover {
+  fill: #756157;
+}
+
+.html-icon:focus {
+  fill: #756157;
+  border: none;
+  outline: none;
+}
+
+.html-icon:active {
+  fill: #756157;
+  opacity: 30%;
 }
 
 /*Catalog*/
@@ -520,6 +603,10 @@ body {
   text-decoration: none;
   display: block;
   font-weight: 400;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 30%;
 }
 
 /* Нижняя часть фильтра */
@@ -593,6 +680,18 @@ body {
   padding: 14px 15px;
 }
 
+.apply:hover {
+  background-color: #68A2CA;
+}
+
+.apply:focus {
+  background-color: #68A2CA;
+}
+
+.apply:active {
+    background-color: #82b3d3;
+  }
+
 .reset {
   text-decoration: none;
   font-weight: 400;
@@ -600,6 +699,20 @@ body {
   background-color:transparent;
   text-transform: none;
   margin-top: 20px;
+}
+
+.reset:hover {
+  background-color: transparent;
+  opacity: 30%;
+}
+
+.reset:focus {
+  background-color: transparent;
+}
+
+.reset:active {
+  background-color: transparent;
+  opacity: 30%;
 }
 
 /*Сортировка*/
@@ -638,6 +751,37 @@ body {
   width: 48px;
   height: 48px;
   background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.show-icon .show-table-checked {
+  border-color: #000000;
+}
+
+.show-slide:hover {
+  border-color: #000000;
+}
+
+.show-slide:focus {
+  outline: none;
+  border-color: #68A2CA;
+}
+
+.show-slide:active {
+  border-color: #000000;
+}
+
+.show-list:hover {
+  border-color: #000000;
+}
+
+.show-list:focus {
+  outline: none;
+  border-color: #68A2CA;
+}
+
+.show-list:active {
+  border-color: #000000;
 }
 
 /*Контейнер каталога*/
@@ -716,9 +860,33 @@ body {
   width: 140px;
 }
 
+.button + .hotels-card-favorites:hover {
+    background-color: #68A2CA;
+}
+
+.button + .hotels-card-favorites:focus {
+    background-color: #68A2CA;
+}
+
+.button + .hotels-card-favorites:active {
+    background-color: #82B3D3;
+}
+
 .button + .hotels-card-favorites-checked {
   background-color: #7db54f;
   width: 140px;
+}
+
+.button + .hotels-card-favorites-checked:hover {
+  background-color: #6C9E42;
+}
+
+.button + .hotels-card-favorites-checked:focus {
+  background-color: #6C9E42;
+}
+
+.button + .hotels-card-favorites-checked:active {
+    background-color: #7DB54F;
 }
 
 .image-rate {
@@ -787,6 +955,7 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #82b3d3;
+  border: 1px solid #82b3d3;
   border-radius: 4px;
   text-decoration: none;
   display: block;
@@ -794,6 +963,23 @@ body {
   padding: 11px 25px 13px 23px;
   width: 60px;
   height: 60px;
+}
+
+.pagination-link:first-child {
+  border-color: #f2f2f2;
+}
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  opacity: 30%;
 }
 
 .pagination-item .ten {
